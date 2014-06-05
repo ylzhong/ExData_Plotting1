@@ -15,7 +15,7 @@ df$Dt <- ymd_hms(paste(df$Date, df$Time, sep = "_"))
 p31 <- df$ Sub_metering_1
 p32 <- df$ Sub_metering_2
 p33 <- df$ Sub_metering_3
-png(filename="plot3.png", width=480, height=480, units="px" )
+png(filename="plot3.png", width=480, height=480, units="px",bg = "transparent" )
 plot (df$Dt,p31,type="l",xlab="",ylab="Energy sub metering") 
 lines(df$Dt,p32,col="red") 
 lines(df$Dt,p33,col="blue") 

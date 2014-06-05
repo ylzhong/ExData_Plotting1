@@ -11,7 +11,7 @@ df <- subset(data,data$Date=="2007-02-01"|data$Date=="2007-02-02")
 
 # plot
 
-png(filename="plot1.png", width=480, height=480, units="px" )
+png(filename="plot1.png", width=480, height=480, units="px",bg = "transparent" )
 p1 <- df$Global_active_power
 hist(p1,ylim=c(0,1200),col="red",main="Global Active Power",xlab="Global Active Power(kilowatts)")
 dev.off()

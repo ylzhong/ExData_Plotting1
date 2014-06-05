@@ -21,7 +21,7 @@ p32 <- df$ Sub_metering_2
 p33 <- df$ Sub_metering_3
 p4 <- df$Global_reactive_power
 
-png(filename="plot4.png", width=480, height=480, units="px" )
+png(filename="plot4.png", width=480, height=480, units="px",bg = "transparent" )
 par(mfrow=c(2,2),mar=c(4,4,2,1),oma=c(0,0,2,0))
 plot(p2,p1,type="l",ylab="Global Active Power",xlab="")
 plot(p2,p3,type="l",xlab="datetime",ylab="Voltage")
