@@ -15,6 +15,6 @@ p1 <- df$Global_active_power
 
 require("lubridate")
 df$Dt <- ymd_hms(paste(df$Date, df$Time, sep = "_"))
-png(filename="plot2.png", width=480, height=480, units="px" )
+png(filename="plot2.png", width=480, height=480, units="px",bg = "transparent" )
 plot(df$Dt,p1,type="l",ylab="Global Active Power(kilowatts)",xlab="")
 dev.off()
